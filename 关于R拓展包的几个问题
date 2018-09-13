@@ -1,0 +1,33 @@
+1： 安装R拓展包：
+      a: 在rstudio中输入命令： install.packages("dplyr")
+      b: 通过窗口界面安装：点击右下方install, 选择从官网CRAN上安装拓展包，输入拓展包的名字，点击安装
+2： 如何查找在电脑上已经安装了哪些拓展包：
+      a: 在rstudio中输入命令： installed.packages()R会把所有安装的拓展包都列出
+      b: 直接点击右下方的packages，蓝色的字体就是已经安装的拓展包的名字，第二栏是关于它的简单介绍，最右边一栏是拓展包的版本信息
+3： 检查电脑里有哪些拓展包是需要更新的：
+      a: 在rstudio中输入命令： old.packages()      
+4： 一健更新所有的拓展包： 
+      update.packages()
+5： 更新某一个拓展包：
+      a: 重新安装一次 install.packages("name")
+      b: 在右下方窗口界面中点击Update,会显示已经安装的版本和最新的版本，如果要更新所有拓展包，就选择全部并更新，也可选择其中一个并更新
+6： 如何删除一个拓展包：
+      a: 在rstudio中输入命令： remove.packages("dplyr")
+      b: 也可在右下方的packages界面，点击右边叉号
+7： 如何加载R拓展包
+      a: 在rstudio中输入命令： library("dplyr")
+      b: 在右下方packages窗口中，找到相应dplyr包，点击前面的方块
+8： 可以同时加载多个拓展包吗
+      加载拓展包时需要使用的library功能，现在还不支持同时加载多个拓展包，可以一个一个单独的加载
+9： 怎么取消加载
+      a: 在rstudio中输入命令： detach("package:dplyr",unload=TRUE)
+      b: 在右下方packages窗口中，找到相应dplyr包，点击前面的方块（对号消失）
+10： 去哪里查找帮助
+      a: 在右下方窗口界面中点击help，然后进行搜索
+      b: 命令行，在要查找的名字前连续输入两个问号，如： ?dplyr
+      c: 如果我们已经知道我们想用的是这个拓展包当中的某一个功能，只想要查找这个功能的使用方法：
+             可直接输入功能
+             或用help指令查找：  help(mutate,package="dplyr")
+11： 怎么找到合适的拓展包
+      a: 已发表的文献
+      b: CRAN task view    （是R的团队把一些很常用的拓展包按照所分析的功能来进行分类和整理的一个网址
