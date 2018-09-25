@@ -1,3 +1,6 @@
+                  关于R拓展包的几个问题
+
+
 1： 安装R拓展包：
       a: 在rstudio中输入命令： install.packages("dplyr")
       b: 通过窗口界面安装：点击右下方install, 选择从官网CRAN上安装拓展包，输入拓展包的名字，点击安装
